@@ -1,0 +1,319 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #f5f5f5;
+  line-height: 1.4;
+}
+
+img {
+	max-width: 88%;
+	margin: auto;
+}
+
+h1 {
+  color: #427044;
+  font-family: 'Yellowtail', cursive;
+}
+
+h2 {
+  padding-top: 50px;
+  padding-bottom: 40px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.2em;
+	color: #545454;
+	text-transform: uppercase;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+  color: #909190;
+  padding-bottom: 15px;
+  margin: 1em;
+}
+
+.profile p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-nav a,
+h1, h2, h3 {
+	font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #427044;
+}
+
+a:hover {
+  color: #4fe471;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #394f3e;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* Navigation */
+
+.main-nav {
+	margin: 1em;
+}
+
+.main-nav a {
+  background-color: #fff;
+}
+
+.main-nav a,
+.footer-nav a {
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: 10px 0;
+	margin-top: 6px;
+}
+
+.name,
+.main-nav a {
+	text-align: center;
+	display: block;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.footer-nav li {
+  font-size: 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+/* Intro */
+
+.intro {
+	text-align: center;
+	margin: 2em;
+}
+
+.profile p {
+  background-color: #427044;
+  color: #fff;
+  padding-top: 15px;
+}
+
+/* Articles */
+
+.articles {
+	background-color: #fff;
+}
+
+.articles img,
+.lang img {
+  margin-left: 1.2em;
+}
+
+h2, h3, p {
+	text-align: center;
+}
+
+.last-p {
+	padding-bottom: 4em;
+}
+
+.css {
+  padding-top: 20px;
+}
+
+/* footer */
+
+.left {
+	text-transform: lowercase;
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.right {
+	display: inline-block;
+	padding-left: 60px;
+}
+
+#nav-name {
+  text-align: left;
+  font-family: 'Yellowtail', cursive;
+  font-size: 13px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #427044;
+}
+
+.lang {
+  margin: 1.5em
+}
+
+.main-footer .left {
+	text-transform: lowercase;
+}
+
+.main-footer {
+  border-top: 1px solid rgb(192, 188, 188);
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.top a {
+  font-size: 13px;
+}
+
+.top {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* ================================= 
+  Media Quiries
+==================================== */
+
+@media (min-width: 768px) {
+  .main-nav {
+    text-align: center;
+  }
+  .main-nav li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .main-nav a {
+    background-color: #f5f5f5;
+  }
+  .intro {
+    padding: 60px 0;
+  }
+  .intro,
+  .pic {
+    margin: 0;
+  }
+  .intro p {
+    margin: 0 0 0 1.5em;
+    text-align: left;
+  }
+  .img {
+    float: right;
+    width: 40%;
+  }
+  .profile {
+    float: left;
+    width: 60%;
+    margin: 0;
+  }
+  .profile p {
+    padding-left: 5px;
+  }
+  article {
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+  }
+  h2, h3 {
+    font-size: 1.5em;
+  }
+  .css {
+    padding-top: 0;
+  }
+  .right {
+    float: right;
+    padding-top: 10px;
+  }
+  .left {
+    padding-top: 8px;
+  }
+  .top {
+    display: none;
+  }
+  .footer-nav {
+    display: inline-block;
+  }
+  /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+  .name {
+    float: left;
+    padding-left: 1.5em;
+  }
+  .main-nav {
+    float: right;
+    padding-right: 1.5em;
+  }
+  .main-nav li {
+    margin-left: 35px;
+  }
+  .img {
+    padding-right: 1em;
+  }
+  main {
+    padding-top: 50px;
+  }
+  .profile p {
+    padding: 15px 1em;
+    font-size: 20px;
+  }
+  .articles {
+    margin: 0 1.5em;
+  }
+  article {
+    width: 33%;
+  }
+  .lang article {
+    width: 49%;
+  }
+  .lang img {
+    margin-left: 1.7em;
+  }
+  .css {
+    padding-top: 0;
+  }
+  .right {
+    float: right;
+    padding-top: 10px;
+  }
+  .left {
+    padding-top: 8px;
+  }
+
+  /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
