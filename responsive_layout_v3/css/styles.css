@@ -134,8 +134,10 @@ a:visited {
 	background-color: #fff;
 }
 
-.articles img {
-  margin-left: 1.2em;
+.articles img,
+.lang img {
+  margin: 0 auto;
+  display: block;
 }
 
 .lang {
@@ -240,6 +242,10 @@ h2, h3, p {
   }
   h2, h3 {
     font-size: 1.5em;
+  }
+  .lang img {
+    display: inline-block;
+    width: 49%;
   }
   .css {
     padding-top: 0;
